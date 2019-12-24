@@ -647,7 +647,7 @@ public class ApiClient {
         String delimiter = "";
         for (final Map.Entry<String, List<String>> entry : cookies.entrySet()) {
             for (String value : entry.getValue()) {
-                cookieValue.append(String.format("%s%s=%s", delimiter, entry.getKey(), entry.getValue()));
+                cookieValue.append(String.format("%s%s=%s", delimiter, entry.getKey(), value));
                 delimiter = "; ";
             }
         }
